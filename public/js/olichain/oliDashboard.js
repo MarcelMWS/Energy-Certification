@@ -380,6 +380,9 @@ function watchMCP() {
         currentTime = currentTime.slice(-10);
       }
 
+console.log(cBid);
+console.log(currentTime);
+
       var data = [{
         x: currentTime,
         y: cBid,
