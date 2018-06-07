@@ -11,14 +11,14 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610112806100536000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b3415604e57600080fd5b60546056565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141560e4576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5600a165627a7a723058200509e2eac21658f0cf9394bf44ef49834dfbc941e4ea3fb685e24ea61ecc25300029",
-  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b3415604e57600080fd5b60546056565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141560e4576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5600a165627a7a723058200509e2eac21658f0cf9394bf44ef49834dfbc941e4ea3fb685e24ea61ecc25300029",
-  "sourceMap": "52:102:2:-;;;214:10:3;206:5;;:18;;;;;;;;;;;;;;;;;;52:102:2;;;;;;",
-  "deployedSourceMap": "52:102:2:-;;;;;;;;;;;;;;;;;;;;;;;;82:69;;;;;;;;;;;;;;;123:5;;;;;;;;;;;109:19;;:10;:19;;;105:39;;;138:5;;;;;;;;;;;130:14;;;105:39;82:69::o",
-  "source": "pragma solidity ^0.4.0;\r\n\r\nimport './owned.sol';\r\n\r\ncontract mortal is owned {\r\n  function kill() {\r\n    if (msg.sender == owner) suicide(owner); \r\n  }\r\n}",
-  "sourcePath": "C:\\Users\\felix.foerster\\documents\\github\\energy-certification\\truffle_compilation\\contracts\\mortal.sol",
+  "bytecode": "0x6060604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610112806100536000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b3415604e57600080fd5b60546056565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141560e4576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5600a165627a7a7230582022920c9199ffd579e900ccd296703aef1e71c98999d15b21dbee5fc8674b7b1c0029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b3415604e57600080fd5b60546056565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141560e4576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b5600a165627a7a7230582022920c9199ffd579e900ccd296703aef1e71c98999d15b21dbee5fc8674b7b1c0029",
+  "sourceMap": "48:98:2:-;;;202:10:3;194:5;;:18;;;;;;;;;;;;;;;;;;48:98:2;;;;;;",
+  "deployedSourceMap": "48:98:2:-;;;;;;;;;;;;;;;;;;;;;;;;77:67;;;;;;;;;;;;;;;117:5;;;;;;;;;;;103:19;;:10;:19;;;99:39;;;132:5;;;;;;;;;;;124:14;;;99:39;77:67::o",
+  "source": "pragma solidity ^0.4.0;\n\nimport './owned.sol';\n\ncontract mortal is owned {\n  function kill() {\n    if (msg.sender == owner) suicide(owner); \n  }\n}",
+  "sourcePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/mortal.sol",
   "ast": {
-    "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/mortal.sol",
+    "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/mortal.sol",
     "exportedSymbols": {
       "mortal": [
         1168
@@ -39,13 +39,13 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/owned.sol",
+        "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/owned.sol",
         "file": "./owned.sol",
         "id": 1152,
         "nodeType": "ImportDirective",
         "scope": 1169,
         "sourceUnit": 1193,
-        "src": "27:21:2",
+        "src": "25:21:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -59,7 +59,7 @@
               "name": "owned",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1192,
-              "src": "71:5:2",
+              "src": "67:5:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_owned_$1192",
                 "typeString": "contract owned"
@@ -67,7 +67,7 @@
             },
             "id": 1154,
             "nodeType": "InheritanceSpecifier",
-            "src": "71:5:2"
+            "src": "67:5:2"
           }
         ],
         "contractDependencies": [
@@ -88,7 +88,7 @@
             "body": {
               "id": 1166,
               "nodeType": "Block",
-              "src": "98:53:2",
+              "src": "93:51:2",
               "statements": [
                 {
                   "condition": {
@@ -111,7 +111,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "109:3:2",
+                        "src": "103:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -125,7 +125,7 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "109:10:2",
+                      "src": "103:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -140,13 +140,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "123:5:2",
+                      "src": "117:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "109:19:2",
+                    "src": "103:19:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -155,7 +155,7 @@
                   "falseBody": null,
                   "id": 1165,
                   "nodeType": "IfStatement",
-                  "src": "105:39:2",
+                  "src": "99:39:2",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
@@ -167,7 +167,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1172,
-                          "src": "138:5:2",
+                          "src": "132:5:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -186,7 +186,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1213,
-                        "src": "130:7:2",
+                        "src": "124:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
                           "typeString": "function (address)"
@@ -200,7 +200,7 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "130:14:2",
+                      "src": "124:14:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_tuple$__$",
                         "typeString": "tuple()"
@@ -208,7 +208,7 @@
                     },
                     "id": 1164,
                     "nodeType": "ExpressionStatement",
-                    "src": "130:14:2"
+                    "src": "124:14:2"
                   }
                 }
               ]
@@ -224,30 +224,30 @@
               "id": 1155,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "95:2:2"
+              "src": "90:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 1156,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "98:0:2"
+              "src": "93:0:2"
             },
             "scope": 1168,
-            "src": "82:69:2",
+            "src": "77:67:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 1169,
-        "src": "52:102:2"
+        "src": "48:98:2"
       }
     ],
-    "src": "0:154:2"
+    "src": "0:146:2"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/mortal.sol",
+    "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/mortal.sol",
     "exportedSymbols": {
       "mortal": [
         1168
@@ -268,13 +268,13 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/owned.sol",
+        "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/owned.sol",
         "file": "./owned.sol",
         "id": 1152,
         "nodeType": "ImportDirective",
         "scope": 1169,
         "sourceUnit": 1193,
-        "src": "27:21:2",
+        "src": "25:21:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -288,7 +288,7 @@
               "name": "owned",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1192,
-              "src": "71:5:2",
+              "src": "67:5:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_owned_$1192",
                 "typeString": "contract owned"
@@ -296,7 +296,7 @@
             },
             "id": 1154,
             "nodeType": "InheritanceSpecifier",
-            "src": "71:5:2"
+            "src": "67:5:2"
           }
         ],
         "contractDependencies": [
@@ -317,7 +317,7 @@
             "body": {
               "id": 1166,
               "nodeType": "Block",
-              "src": "98:53:2",
+              "src": "93:51:2",
               "statements": [
                 {
                   "condition": {
@@ -340,7 +340,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "109:3:2",
+                        "src": "103:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -354,7 +354,7 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "109:10:2",
+                      "src": "103:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -369,13 +369,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "123:5:2",
+                      "src": "117:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "109:19:2",
+                    "src": "103:19:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -384,7 +384,7 @@
                   "falseBody": null,
                   "id": 1165,
                   "nodeType": "IfStatement",
-                  "src": "105:39:2",
+                  "src": "99:39:2",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
@@ -396,7 +396,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 1172,
-                          "src": "138:5:2",
+                          "src": "132:5:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -415,7 +415,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1213,
-                        "src": "130:7:2",
+                        "src": "124:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
                           "typeString": "function (address)"
@@ -429,7 +429,7 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "130:14:2",
+                      "src": "124:14:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_tuple$__$",
                         "typeString": "tuple()"
@@ -437,7 +437,7 @@
                     },
                     "id": 1164,
                     "nodeType": "ExpressionStatement",
-                    "src": "130:14:2"
+                    "src": "124:14:2"
                   }
                 }
               ]
@@ -453,27 +453,27 @@
               "id": 1155,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "95:2:2"
+              "src": "90:2:2"
             },
             "payable": false,
             "returnParameters": {
               "id": 1156,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "98:0:2"
+              "src": "93:0:2"
             },
             "scope": 1168,
-            "src": "82:69:2",
+            "src": "77:67:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 1169,
-        "src": "52:102:2"
+        "src": "48:98:2"
       }
     ],
-    "src": "0:154:2"
+    "src": "0:146:2"
   },
   "compiler": {
     "name": "solc",
@@ -481,5 +481,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-05-14T10:21:16.194Z"
+  "updatedAt": "2018-06-07T11:15:00.249Z"
 }

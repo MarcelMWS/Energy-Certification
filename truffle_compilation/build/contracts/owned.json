@@ -8,14 +8,14 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x60606040523415600e57600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603580605b6000396000f3006060604052600080fd00a165627a7a72305820386e3738bff04f19b433d036033ca85d12c8853f966706a7ca2f6f456f64bad90029",
-  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820386e3738bff04f19b433d036033ca85d12c8853f966706a7ca2f6f456f64bad90029",
-  "sourceMap": "27:208:3:-;;;171:61;;;;;;;;214:10;206:5;;:18;;;;;;;;;;;;;;;;;;27:208;;;;;;",
-  "deployedSourceMap": "27:208:3:-;;;;;",
-  "source": "pragma solidity ^0.4.0;\r\n\r\ncontract owned {\r\n    address owner;\r\n\r\n    modifier onlyowner() {\r\n        if (msg.sender == owner) {\r\n            _;\r\n        }\r\n    }\r\n\r\n    function owned() public {\r\n        owner = msg.sender;\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\felix.foerster\\documents\\github\\energy-certification\\truffle_compilation\\contracts\\owned.sol",
+  "bytecode": "0x60606040523415600e57600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603580605b6000396000f3006060604052600080fd00a165627a7a723058203de99d9bb48a62699229e068a9d3c3612d75635183057eb9b568eec3317f19b40029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a723058203de99d9bb48a62699229e068a9d3c3612d75635183057eb9b568eec3317f19b40029",
+  "sourceMap": "25:196:3:-;;;160:59;;;;;;;;202:10;194:5;;:18;;;;;;;;;;;;;;;;;;25:196;;;;;;",
+  "deployedSourceMap": "25:196:3:-;;;;;",
+  "source": "pragma solidity ^0.4.0;\n\ncontract owned {\n    address owner;\n\n    modifier onlyowner() {\n        if (msg.sender == owner) {\n            _;\n        }\n    }\n\n    function owned() public {\n        owner = msg.sender;\n    }\n}",
+  "sourcePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/owned.sol",
   "ast": {
-    "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/owned.sol",
+    "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/owned.sol",
     "exportedSymbols": {
       "owned": [
         1192
@@ -54,7 +54,7 @@
             "name": "owner",
             "nodeType": "VariableDeclaration",
             "scope": 1192,
-            "src": "49:13:3",
+            "src": "46:13:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -65,7 +65,7 @@
               "id": 1171,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "49:7:3",
+              "src": "46:7:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -78,7 +78,7 @@
             "body": {
               "id": 1181,
               "nodeType": "Block",
-              "src": "92:71:3",
+              "src": "87:67:3",
               "statements": [
                 {
                   "condition": {
@@ -101,7 +101,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "107:3:3",
+                        "src": "101:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -115,7 +115,7 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "107:10:3",
+                      "src": "101:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -130,13 +130,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "121:5:3",
+                      "src": "115:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "107:19:3",
+                    "src": "101:19:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -145,16 +145,16 @@
                   "falseBody": null,
                   "id": 1180,
                   "nodeType": "IfStatement",
-                  "src": "103:53:3",
+                  "src": "97:51:3",
                   "trueBody": {
                     "id": 1179,
                     "nodeType": "Block",
-                    "src": "128:28:3",
+                    "src": "122:26:3",
                     "statements": [
                       {
                         "id": 1178,
                         "nodeType": "PlaceholderStatement",
-                        "src": "143:1:3"
+                        "src": "136:1:3"
                       }
                     ]
                   }
@@ -168,16 +168,16 @@
               "id": 1173,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "89:2:3"
+              "src": "84:2:3"
             },
-            "src": "71:92:3",
+            "src": "66:88:3",
             "visibility": "internal"
           },
           {
             "body": {
               "id": 1190,
               "nodeType": "Block",
-              "src": "195:37:3",
+              "src": "184:35:3",
               "statements": [
                 {
                   "expression": {
@@ -194,7 +194,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "206:5:3",
+                      "src": "194:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -211,7 +211,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "214:3:3",
+                        "src": "202:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -225,13 +225,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "214:10:3",
+                      "src": "202:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "206:18:3",
+                    "src": "194:18:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -239,7 +239,7 @@
                   },
                   "id": 1189,
                   "nodeType": "ExpressionStatement",
-                  "src": "206:18:3"
+                  "src": "194:18:3"
                 }
               ]
             },
@@ -254,30 +254,30 @@
               "id": 1183,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "185:2:3"
+              "src": "174:2:3"
             },
             "payable": false,
             "returnParameters": {
               "id": 1184,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "195:0:3"
+              "src": "184:0:3"
             },
             "scope": 1192,
-            "src": "171:61:3",
+            "src": "160:59:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 1193,
-        "src": "27:208:3"
+        "src": "25:196:3"
       }
     ],
-    "src": "0:235:3"
+    "src": "0:221:3"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/felix.foerster/documents/github/energy-certification/truffle_compilation/contracts/owned.sol",
+    "absolutePath": "/Users/m.pohland/Energy-Certification/truffle_compilation/contracts/owned.sol",
     "exportedSymbols": {
       "owned": [
         1192
@@ -316,7 +316,7 @@
             "name": "owner",
             "nodeType": "VariableDeclaration",
             "scope": 1192,
-            "src": "49:13:3",
+            "src": "46:13:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -327,7 +327,7 @@
               "id": 1171,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "49:7:3",
+              "src": "46:7:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -340,7 +340,7 @@
             "body": {
               "id": 1181,
               "nodeType": "Block",
-              "src": "92:71:3",
+              "src": "87:67:3",
               "statements": [
                 {
                   "condition": {
@@ -363,7 +363,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "107:3:3",
+                        "src": "101:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -377,7 +377,7 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "107:10:3",
+                      "src": "101:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -392,13 +392,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "121:5:3",
+                      "src": "115:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "107:19:3",
+                    "src": "101:19:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -407,16 +407,16 @@
                   "falseBody": null,
                   "id": 1180,
                   "nodeType": "IfStatement",
-                  "src": "103:53:3",
+                  "src": "97:51:3",
                   "trueBody": {
                     "id": 1179,
                     "nodeType": "Block",
-                    "src": "128:28:3",
+                    "src": "122:26:3",
                     "statements": [
                       {
                         "id": 1178,
                         "nodeType": "PlaceholderStatement",
-                        "src": "143:1:3"
+                        "src": "136:1:3"
                       }
                     ]
                   }
@@ -430,16 +430,16 @@
               "id": 1173,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "89:2:3"
+              "src": "84:2:3"
             },
-            "src": "71:92:3",
+            "src": "66:88:3",
             "visibility": "internal"
           },
           {
             "body": {
               "id": 1190,
               "nodeType": "Block",
-              "src": "195:37:3",
+              "src": "184:35:3",
               "statements": [
                 {
                   "expression": {
@@ -456,7 +456,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1172,
-                      "src": "206:5:3",
+                      "src": "194:5:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -473,7 +473,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1204,
-                        "src": "214:3:3",
+                        "src": "202:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -487,13 +487,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "214:10:3",
+                      "src": "202:10:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "206:18:3",
+                    "src": "194:18:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -501,7 +501,7 @@
                   },
                   "id": 1189,
                   "nodeType": "ExpressionStatement",
-                  "src": "206:18:3"
+                  "src": "194:18:3"
                 }
               ]
             },
@@ -516,27 +516,27 @@
               "id": 1183,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "185:2:3"
+              "src": "174:2:3"
             },
             "payable": false,
             "returnParameters": {
               "id": 1184,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "195:0:3"
+              "src": "184:0:3"
             },
             "scope": 1192,
-            "src": "171:61:3",
+            "src": "160:59:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 1193,
-        "src": "27:208:3"
+        "src": "25:196:3"
       }
     ],
-    "src": "0:235:3"
+    "src": "0:221:3"
   },
   "compiler": {
     "name": "solc",
@@ -544,5 +544,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-05-14T10:21:16.194Z"
+  "updatedAt": "2018-06-07T11:15:00.249Z"
 }
